@@ -22,6 +22,18 @@ To build the Docker images for the frontend and backend, follow these steps:
      docker build -t backend .
      ```
 
+### Env Variables
+
+Create a .env file in the `backend` directory
+
+```
+NODE_ENV = development
+PORT = 5000
+MONGO_URI = your mongodb uri
+JWT_SECRET = 'abc123'
+PAYPAL_CLIENT_ID = your paypal client id --not mandatory
+```
+
 ### Running Containers
 
 Before running the containers, you should create a Docker network to enable communication between the frontend and backend containers:
